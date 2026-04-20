@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Log4j2 Configuration
+    ────────────────────────────────────────────────────────────────────────
+    Two appenders:
+      Console  → prints INFO+ logs to the terminal during test runs
+      File     → writes ALL logs to logs/automation.log (rolls daily)
+
+    Log levels:
+      ERROR – something broke (caught exceptions, failed assertions)
+      WARN  – something unexpected but test continued
+      INFO  – normal test steps (scenario start, actions taken)
+      DEBUG – detailed info (element found, value read) – turned off by default
+    ────────────────────────────────────────────────────────────────────────
+-->
+<Configuration status="WARN">
+
+    <Appenders>
+
+        <!-- Console appender – visible in IntelliJ Run tab and Maven terminal -->
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss} [%-5level] %c{1} – %msg%n"/>
+        </Console>
+
+        <!-- Rolling file appender – keeps logs/automation.log on disk -->
+        <RollingFile name="File"
+                     fileName="logs/automation.log"
+                     filePattern="logs/automation-%d{yyyy-MM-dd}.log">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} [%-5level] %c{1} – %msg%n"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy/>
+            </Policies>
+        </RollingFile>
+
+    </Appenders>
+
+    <Loggers>
+        <!-- Root logger: INFO to console, DEBUG to file -->
+        <Root level="debug">
+            <AppenderRef ref="Console" level="info"/>
+            <AppenderRef ref="File"    level="debug"/>
+        </Root>
+    </Loggers>
+
+</Configuration>

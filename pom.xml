@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+         http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.indiamart</groupId>
+    <artifactId>indiamart-selenium</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <cucumber.version>7.14.0</cucumber.version>
+        <allure.version>2.24.0</allure.version>
+    </properties>
+
+    <dependencies>
+
+        <!-- ── Selenium WebDriver (v4 includes built-in Selenium Manager    -->
+        <!--    so NO WebDriverManager jar is needed – ChromeDriver is found  -->
+        <!--    automatically as long as Chrome browser is installed)          -->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>4.15.0</version>
+        </dependency>
+
+        <!-- ── Cucumber Java (step definitions, @Given/@When/@Then) ──────── -->
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-java</artifactId>
+            <version>${cucumber.version}</version>
+        </dependency>
+
+        <!-- ── Cucumber TestNG (runner bridge – AbstractTestNGCucumberTests) -->
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-testng</artifactId>
+            <version>${cucumber.version}</version>
+        </dependency>
+
+        <!-- ── TestNG (execution engine) ───────────────────────────────────── -->
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>7.8.0</version>
+        </dependency>
+
+        <!-- ── Allure Cucumber 7 Adapter (generates Allure results from Cucumber) -->
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-cucumber7-jvm</artifactId>
+            <version>${allure.version}</version>
+        </dependency>
+
+        <!-- ── Apache POI (Excel file WRITE for car wash report) ─────────── -->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>5.2.3</version>
+        </dependency>
+
+        <!-- ── Log4j2 API ─────────────────────────────────────────────────── -->
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-api</artifactId>
+            <version>2.21.1</version>
+        </dependency>
+
+        <!-- ── Log4j2 Core (actual logger implementation) ─────────────────── -->
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>2.21.1</version>
+        </dependency>
+
+        <!-- ── Commons IO (used in ScreenshotUtil for file copy) ──────────── -->
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.15.0</version>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+        <plugins>
+
+            <!-- ── Maven Surefire: reads testng.xml and runs TestRunner ────── -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.1.2</version>
+                <configuration>
+                    <suiteXmlFiles>
+                        <suiteXmlFile>testng.xml</suiteXmlFile>
+                    </suiteXmlFiles>
+                </configuration>
+            </plugin>
+
+            <!-- ── Allure Maven: generates the HTML report from results ─────
+                 Run after tests:  mvn allure:serve
+                 This opens the Allure report in your browser automatically.  -->
+            <plugin>
+                <groupId>io.qameta.allure</groupId>
+                <artifactId>allure-maven</artifactId>
+                <version>2.12.0</version>
+                <configuration>
+                    <reportVersion>${allure.version}</reportVersion>
+                </configuration>
+            </plugin>
+
+        </plugins>
+    </build>
+
+</project>

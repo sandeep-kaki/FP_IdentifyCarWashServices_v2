@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<!--
+    TestNG Suite Configuration
+    ──────────────────────────────────────────────────────────────────
+    Run ALL scenarios  :  mvn test
+    Run by tag         :  mvn test -Dcucumber.filter.tags="@TC01"
+    Rerun failed only  :  manually update testng.xml to use RerunRunner
+                          OR run:  mvn test -Dtest=RerunRunner
+    ──────────────────────────────────────────────────────────────────
+-->
+<suite name="IndiaMart Automation Suite" verbose="1">
+    <test name="IndiaMart Test Scenarios">
+        <classes>
+            <class name="com.indiamart.runner.TestRunner"/>
+        </classes>
+    </test>
+</suite>
