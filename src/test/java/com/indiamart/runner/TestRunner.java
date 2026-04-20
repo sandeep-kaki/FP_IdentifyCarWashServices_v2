@@ -4,17 +4,6 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 /**
- * TestRunner – Main Cucumber + TestNG Runner.
- *
- * HOW TestNG + CUCUMBER WORK TOGETHER HERE:
- *   1. Maven Surefire reads testng.xml
- *   2. testng.xml points to this class
- *   3. This class extends AbstractTestNGCucumberTests
- *      → TestNG treats it as a standard test class
- *      → AbstractTestNGCucumberTests provides the @Test method
- *         that iterates over all scenarios in the feature file
- *   4. @CucumberOptions tells Cucumber where feature files and step defs are
- *
  * PLUGINS:
  *   pretty   → clean readable console output during test run
  *   Allure   → generates JSON result files in target/allure-results/

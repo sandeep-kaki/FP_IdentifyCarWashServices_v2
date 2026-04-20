@@ -3,8 +3,7 @@ Feature: IndiaMart Website Automation
   I want to automate IndiaMart test cases
   So that I can verify key functionalities of the website
 
-  # Background runs BEFORE every scenario.
-  # Each scenario gets a fresh browser session (handled by @Before in Hooks.java).
+  # Background -> Each scenario gets a fresh browser session (in @Before hook)
   Background:
     Given I open the IndiaMart website
 

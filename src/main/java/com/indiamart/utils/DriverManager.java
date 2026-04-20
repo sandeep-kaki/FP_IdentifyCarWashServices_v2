@@ -5,6 +5,8 @@ import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 
@@ -52,13 +54,13 @@ public class DriverManager {
 
         switch (browser) {
 
-            case "firefox":
+            case "edge":
                 // Firefox – geckodriver must be in system PATH
-                FirefoxOptions firefoxOptions = new FirefoxOptions();
-                firefoxOptions.addArguments("--disable-notifications");
-                driver = new FirefoxDriver(firefoxOptions);
+                EdgeOptions edgeOptions = new EdgeOptions();
+                edgeOptions.addArguments("--disable-notifications");
+                driver = new EdgeDriver(edgeOptions);
                 driver.manage().window().maximize();
-                log.info("FirefoxDriver started.");
+                log.info("Edge started.");
                 break;
 
             case "chrome":

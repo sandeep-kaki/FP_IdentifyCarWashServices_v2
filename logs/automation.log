@@ -1,159 +1,156 @@
-2026-04-20 08:54:32 [INFO ] Hooks – ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-2026-04-20 08:54:32 [INFO ] Hooks – STARTING: Display top 3 car wash services from Chennai
-2026-04-20 08:54:32 [INFO ] Hooks – ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-2026-04-20 08:54:32 [INFO ] DriverManager – Initializing browser: chrome
-2026-04-20 08:54:37 [INFO ] DriverManager – ChromeDriver started.
-2026-04-20 08:54:42 [INFO ] IndiaMartSteps – Opened IndiaMart: https://www.indiamart.com/
-2026-04-20 08:54:43 [INFO ] HomePage – Current city: 'Chennai', Target city: 'Chennai'
-2026-04-20 08:54:43 [INFO ] HomePage – City already set to Chennai. Skipping city selection.
-2026-04-20 08:54:43 [INFO ] HomePage – Searching for: car wash services
-2026-04-20 08:54:46 [INFO ] SearchResultsPage – Search results loaded.
-2026-04-20 08:54:46 [DEBUG] SearchResultsPage – Top 3 names: [Doorstep Car Wash Service, Car Washing Services At Home, Car Washing Service]
-2026-04-20 08:54:46 [DEBUG] SearchResultsPage – Rating not found for card 1. Defaulting to N/A.
-2026-04-20 08:54:46 [DEBUG] SearchResultsPage – Rating not found for card 2. Defaulting to N/A.
-2026-04-20 08:54:46 [DEBUG] SearchResultsPage – Rating not found for card 3. Defaulting to N/A.
-2026-04-20 08:54:48 [INFO ] ServiceDetailPage – Phone extracted: 07942548952
-2026-04-20 08:54:49 [INFO ] ServiceDetailPage – Phone extracted: 07942666907
-2026-04-20 08:54:50 [INFO ] ServiceDetailPage – Phone extracted: 08047812127
-2026-04-20 08:54:50 [INFO ] IndiaMartSteps – TC01: Collected 3 services.
-2026-04-20 08:54:51 [DEBUG] ZipPackage – Save core properties part
-2026-04-20 08:54:51 [DEBUG] ZipPackage – Save content types part
-2026-04-20 08:54:52 [DEBUG] ZipPackage – Save package relationships
-2026-04-20 08:54:52 [DEBUG] ZipPackage – Save part 'docProps/app.xml'
-2026-04-20 08:54:52 [DEBUG] ZipPackage – Save part 'docProps/core.xml'
-2026-04-20 08:54:52 [DEBUG] ZipPackage – Save part 'xl/sharedStrings.xml'
-2026-04-20 08:54:52 [DEBUG] ZipPackage – Save part 'xl/styles.xml'
-2026-04-20 08:54:52 [DEBUG] ZipPackage – Save part 'xl/workbook.xml'
-2026-04-20 08:54:52 [DEBUG] ZipPackage – Save part 'xl/worksheets/sheet1.xml'
-2026-04-20 08:54:52 [INFO ] ExcelWriter – Excel report saved → ./Reports/CarWashServices.xlsx
-2026-04-20 08:54:52 [DEBUG] ZipPackage – Save content types part
-2026-04-20 08:54:52 [DEBUG] ZipPackage – Save package relationships
-2026-04-20 08:54:52 [DEBUG] ZipPackage – Save part 'docProps/app.xml'
-2026-04-20 08:54:52 [DEBUG] ZipPackage – Save part 'docProps/core.xml'
-2026-04-20 08:54:52 [DEBUG] ZipPackage – Save part 'xl/sharedStrings.xml'
-2026-04-20 08:54:52 [DEBUG] ZipPackage – Save part 'xl/styles.xml'
-2026-04-20 08:54:52 [DEBUG] ZipPackage – Save part 'xl/workbook.xml'
-2026-04-20 08:54:52 [DEBUG] ZipPackage – Save part 'xl/worksheets/sheet1.xml'
-2026-04-20 08:54:52 [INFO ] IndiaMartSteps – TC01: Car wash data saved to Excel.
-2026-04-20 08:54:53 [INFO ] DriverManager – Browser closed and driver removed.
-2026-04-20 08:54:53 [INFO ] Hooks – FINISHED: Display top 3 car wash services from Chennai [PASSED]
-2026-04-20 08:54:53 [INFO ] Hooks – ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-2026-04-20 08:54:53 [INFO ] Hooks – ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-2026-04-20 08:54:53 [INFO ] Hooks – STARTING: Get product names from Food Agriculture and Farming section
-2026-04-20 08:54:53 [INFO ] Hooks – ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-2026-04-20 08:54:53 [INFO ] DriverManager – Initializing browser: chrome
-2026-04-20 08:54:56 [INFO ] DriverManager – ChromeDriver started.
-2026-04-20 08:54:58 [INFO ] IndiaMartSteps – Opened IndiaMart: https://www.indiamart.com/
-2026-04-20 08:54:58 [INFO ] HomePage – Scrolled to Food, Agriculture & Farming section.
-2026-04-20 08:55:04 [DEBUG] HomePage – No popup found – continuing.
-2026-04-20 08:55:04 [INFO ] HomePage – Found 9 products in Food, Agriculture & Farming.
-2026-04-20 08:55:05 [INFO ] DriverManager – Browser closed and driver removed.
-2026-04-20 08:55:05 [INFO ] Hooks – FINISHED: Get product names from Food Agriculture and Farming section [PASSED]
-2026-04-20 08:55:05 [INFO ] Hooks – ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-2026-04-20 08:55:05 [INFO ] Hooks – ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-2026-04-20 08:55:05 [INFO ] Hooks – STARTING: Sign in attempt with invalid phone number
-2026-04-20 08:55:05 [INFO ] Hooks – ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-2026-04-20 08:55:05 [INFO ] DriverManager – Initializing browser: chrome
-2026-04-20 08:55:08 [INFO ] DriverManager – ChromeDriver started.
-2026-04-20 08:55:10 [INFO ] IndiaMartSteps – Opened IndiaMart: https://www.indiamart.com/
-2026-04-20 08:55:10 [INFO ] HomePage – Clicking Sign In button.
-2026-04-20 08:55:11 [INFO ] LoginModal – Entered phone number: 5476543218
-2026-04-20 08:55:11 [INFO ] LoginModal – Phone number submitted.
-2026-04-20 08:55:11 [INFO ] LoginModal – Error message displayed: Mobile Number should start with 6,7,8 or 9
-2026-04-20 08:55:12 [INFO ] ScreenshotUtil – Screenshot saved → .\Screenshots\invalid_number_error.png
-2026-04-20 08:55:12 [INFO ] LoginModal – Sign-in modal closed.
-2026-04-20 08:55:13 [INFO ] DriverManager – Browser closed and driver removed.
-2026-04-20 08:55:13 [INFO ] Hooks – FINISHED: Sign in attempt with invalid phone number [PASSED]
-2026-04-20 08:55:13 [INFO ] Hooks – ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-2026-04-20 08:55:13 [INFO ] Hooks – ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-2026-04-20 08:55:13 [INFO ] Hooks – STARTING: Capture top product categories from Exporters section
-2026-04-20 08:55:13 [INFO ] Hooks – ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-2026-04-20 08:55:13 [INFO ] DriverManager – Initializing browser: chrome
-2026-04-20 08:55:16 [INFO ] DriverManager – ChromeDriver started.
-2026-04-20 08:55:18 [INFO ] IndiaMartSteps – Opened IndiaMart: https://www.indiamart.com/
-2026-04-20 08:55:18 [INFO ] HomePage – Clicking Exporters tab.
-2026-04-20 08:55:21 [INFO ] ExportersPage – Exporters page loaded.
-2026-04-20 08:55:21 [INFO ] ExportersPage – Extracted 5 top product categories.
-2026-04-20 08:55:21 [INFO ] ExportersPage – Scrolled to top categories section.
-2026-04-20 08:55:21 [INFO ] ScreenshotUtil – Screenshot saved → .\Screenshots\top_product_categories_india.png
-2026-04-20 08:55:22 [INFO ] DriverManager – Browser closed and driver removed.
-2026-04-20 08:55:22 [INFO ] Hooks – FINISHED: Capture top product categories from Exporters section [PASSED]
-2026-04-20 08:55:22 [INFO ] Hooks – ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-2026-04-20 09:23:34 [INFO ] Hooks – ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-2026-04-20 09:23:34 [INFO ] Hooks – STARTING: Display top 3 car wash services from Chennai
-2026-04-20 09:23:34 [INFO ] Hooks – ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-2026-04-20 09:23:35 [INFO ] DriverManager – Initializing browser: chrome
-2026-04-20 09:23:39 [INFO ] DriverManager – ChromeDriver started.
-2026-04-20 09:23:43 [INFO ] IndiaMartSteps – Opened IndiaMart: https://www.indiamart.com/
-2026-04-20 09:23:44 [INFO ] HomePage – Current city: 'Chennai', Target city: 'Chennai'
-2026-04-20 09:23:44 [INFO ] HomePage – City already set to Chennai. Skipping city selection.
-2026-04-20 09:23:44 [INFO ] HomePage – Searching for: car wash services
-2026-04-20 09:23:47 [INFO ] SearchResultsPage – Search results loaded.
-2026-04-20 09:23:47 [DEBUG] SearchResultsPage – Top 3 names: [Doorstep Car Wash Service, Car Washing Services At Home, Car Washing Service]
-2026-04-20 09:23:50 [INFO ] ServiceDetailPage – Phone extracted: 07942548952
-2026-04-20 09:23:50 [INFO ] ServiceDetailPage – Phone extracted: 07942666907
-2026-04-20 09:23:51 [INFO ] ServiceDetailPage – Phone extracted: 08047812127
-2026-04-20 09:23:51 [INFO ] IndiaMartSteps – TC01: Collected 3 services.
-2026-04-20 09:23:52 [DEBUG] ZipPackage – Save core properties part
-2026-04-20 09:23:52 [DEBUG] ZipPackage – Save content types part
-2026-04-20 09:23:52 [DEBUG] ZipPackage – Save package relationships
-2026-04-20 09:23:52 [DEBUG] ZipPackage – Save part 'docProps/app.xml'
-2026-04-20 09:23:52 [DEBUG] ZipPackage – Save part 'docProps/core.xml'
-2026-04-20 09:23:52 [DEBUG] ZipPackage – Save part 'xl/sharedStrings.xml'
-2026-04-20 09:23:52 [DEBUG] ZipPackage – Save part 'xl/styles.xml'
-2026-04-20 09:23:52 [DEBUG] ZipPackage – Save part 'xl/workbook.xml'
-2026-04-20 09:23:52 [DEBUG] ZipPackage – Save part 'xl/worksheets/sheet1.xml'
-2026-04-20 09:23:52 [INFO ] ExcelWriter – Excel report saved → ./Reports/CarWashServices.xlsx
-2026-04-20 09:23:52 [DEBUG] ZipPackage – Save content types part
-2026-04-20 09:23:52 [DEBUG] ZipPackage – Save package relationships
-2026-04-20 09:23:52 [DEBUG] ZipPackage – Save part 'docProps/app.xml'
-2026-04-20 09:23:52 [DEBUG] ZipPackage – Save part 'docProps/core.xml'
-2026-04-20 09:23:52 [DEBUG] ZipPackage – Save part 'xl/sharedStrings.xml'
-2026-04-20 09:23:52 [DEBUG] ZipPackage – Save part 'xl/styles.xml'
-2026-04-20 09:23:52 [DEBUG] ZipPackage – Save part 'xl/workbook.xml'
-2026-04-20 09:23:52 [DEBUG] ZipPackage – Save part 'xl/worksheets/sheet1.xml'
-2026-04-20 09:23:52 [INFO ] IndiaMartSteps – TC01: Car wash data saved to Excel.
-2026-04-20 09:23:54 [INFO ] DriverManager – Browser closed and driver removed.
-2026-04-20 09:23:54 [INFO ] Hooks – FINISHED: Display top 3 car wash services from Chennai [PASSED]
-2026-04-20 09:23:54 [INFO ] Hooks – ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-2026-04-20 09:23:54 [INFO ] Hooks – ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-2026-04-20 09:23:54 [INFO ] Hooks – STARTING: Get product names from Food Agriculture and Farming section
-2026-04-20 09:23:54 [INFO ] Hooks – ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-2026-04-20 09:23:54 [INFO ] DriverManager – Initializing browser: chrome
-2026-04-20 09:23:56 [INFO ] DriverManager – ChromeDriver started.
-2026-04-20 09:23:58 [INFO ] IndiaMartSteps – Opened IndiaMart: https://www.indiamart.com/
-2026-04-20 09:23:58 [INFO ] HomePage – Scrolled to Food, Agriculture & Farming section.
-2026-04-20 09:24:04 [DEBUG] HomePage – No popup found – continuing.
-2026-04-20 09:24:04 [INFO ] HomePage – Found 9 products in Food, Agriculture & Farming.
-2026-04-20 09:24:05 [INFO ] DriverManager – Browser closed and driver removed.
-2026-04-20 09:24:05 [INFO ] Hooks – FINISHED: Get product names from Food Agriculture and Farming section [PASSED]
-2026-04-20 09:24:05 [INFO ] Hooks – ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-2026-04-20 09:24:05 [INFO ] Hooks – ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-2026-04-20 09:24:05 [INFO ] Hooks – STARTING: Sign in attempt with invalid phone number
-2026-04-20 09:24:05 [INFO ] Hooks – ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-2026-04-20 09:24:05 [INFO ] DriverManager – Initializing browser: chrome
-2026-04-20 09:24:08 [INFO ] DriverManager – ChromeDriver started.
-2026-04-20 09:24:10 [INFO ] IndiaMartSteps – Opened IndiaMart: https://www.indiamart.com/
-2026-04-20 09:24:10 [INFO ] HomePage – Clicking Sign In button.
-2026-04-20 09:24:11 [INFO ] LoginModal – Entered phone number: 5476543218
-2026-04-20 09:24:11 [INFO ] LoginModal – Phone number submitted.
-2026-04-20 09:24:11 [INFO ] LoginModal – Error message displayed: Mobile Number should start with 6,7,8 or 9
-2026-04-20 09:24:12 [INFO ] ScreenshotUtil – Screenshot saved → .\Screenshots\invalid_number_error.png
-2026-04-20 09:24:12 [INFO ] LoginModal – Sign-in modal closed.
-2026-04-20 09:24:13 [INFO ] DriverManager – Browser closed and driver removed.
-2026-04-20 09:24:13 [INFO ] Hooks – FINISHED: Sign in attempt with invalid phone number [PASSED]
-2026-04-20 09:24:13 [INFO ] Hooks – ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-2026-04-20 09:24:13 [INFO ] Hooks – ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-2026-04-20 09:24:13 [INFO ] Hooks – STARTING: Capture top product categories from Exporters section
-2026-04-20 09:24:13 [INFO ] Hooks – ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-2026-04-20 09:24:13 [INFO ] DriverManager – Initializing browser: chrome
-2026-04-20 09:24:16 [INFO ] DriverManager – ChromeDriver started.
-2026-04-20 09:24:17 [INFO ] IndiaMartSteps – Opened IndiaMart: https://www.indiamart.com/
-2026-04-20 09:24:17 [INFO ] HomePage – Clicking Exporters tab.
-2026-04-20 09:24:20 [INFO ] ExportersPage – Exporters page loaded.
-2026-04-20 09:24:21 [INFO ] ExportersPage – Extracted 5 top product categories.
-2026-04-20 09:24:21 [INFO ] ExportersPage – Scrolled to top categories section.
-2026-04-20 09:24:21 [INFO ] ScreenshotUtil – Screenshot saved → .\Screenshots\top_product_categories_india.png
-2026-04-20 09:24:22 [INFO ] DriverManager – Browser closed and driver removed.
-2026-04-20 09:24:22 [INFO ] Hooks – FINISHED: Capture top product categories from Exporters section [PASSED]
-2026-04-20 09:24:22 [INFO ] Hooks – ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-04-20 09:44:40 [INFO ] Hooks – ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-04-20 09:44:40 [INFO ] Hooks – STARTING: Display top 3 car wash services from Chennai
+2026-04-20 09:44:40 [INFO ] Hooks – ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-04-20 09:44:40 [INFO ] DriverManager – Initializing browser: chrome
+2026-04-20 09:44:43 [INFO ] DriverManager – ChromeDriver started.
+2026-04-20 09:44:45 [INFO ] IndiaMartSteps – Opened IndiaMart: https://www.indiamart.com/
+2026-04-20 09:44:45 [INFO ] HomePage – Current city: 'Chennai', Target city: 'Chennai'
+2026-04-20 09:44:45 [INFO ] HomePage – City already set to Chennai. Skipping city selection.
+2026-04-20 09:44:45 [INFO ] HomePage – Searching for: car wash services
+2026-04-20 09:44:47 [INFO ] SearchResultsPage – Search results loaded.
+2026-04-20 09:44:47 [DEBUG] SearchResultsPage – Top 3 names: [Doorstep Car Wash Service, Car Washing Services At Home, Car Washing Service]
+2026-04-20 09:44:49 [INFO ] ServiceDetailPage – Phone extracted: 07942548952
+2026-04-20 09:44:50 [INFO ] ServiceDetailPage – Phone extracted: 07942666907
+2026-04-20 09:44:51 [INFO ] ServiceDetailPage – Phone extracted: 08047812127
+2026-04-20 09:44:51 [INFO ] IndiaMartSteps – TC01: Collected 3 services.
+2026-04-20 09:44:52 [DEBUG] ZipPackage – Save core properties part
+2026-04-20 09:44:52 [DEBUG] ZipPackage – Save content types part
+2026-04-20 09:44:52 [DEBUG] ZipPackage – Save package relationships
+2026-04-20 09:44:52 [DEBUG] ZipPackage – Save part 'docProps/app.xml'
+2026-04-20 09:44:52 [DEBUG] ZipPackage – Save part 'docProps/core.xml'
+2026-04-20 09:44:52 [DEBUG] ZipPackage – Save part 'xl/sharedStrings.xml'
+2026-04-20 09:44:52 [DEBUG] ZipPackage – Save part 'xl/styles.xml'
+2026-04-20 09:44:52 [DEBUG] ZipPackage – Save part 'xl/workbook.xml'
+2026-04-20 09:44:52 [DEBUG] ZipPackage – Save part 'xl/worksheets/sheet1.xml'
+2026-04-20 09:44:52 [INFO ] ExcelWriter – Excel report saved → ./Reports/CarWashServices.xlsx
+2026-04-20 09:44:52 [DEBUG] ZipPackage – Save content types part
+2026-04-20 09:44:52 [DEBUG] ZipPackage – Save package relationships
+2026-04-20 09:44:52 [DEBUG] ZipPackage – Save part 'docProps/app.xml'
+2026-04-20 09:44:52 [DEBUG] ZipPackage – Save part 'docProps/core.xml'
+2026-04-20 09:44:52 [DEBUG] ZipPackage – Save part 'xl/sharedStrings.xml'
+2026-04-20 09:44:52 [DEBUG] ZipPackage – Save part 'xl/styles.xml'
+2026-04-20 09:44:52 [DEBUG] ZipPackage – Save part 'xl/workbook.xml'
+2026-04-20 09:44:52 [DEBUG] ZipPackage – Save part 'xl/worksheets/sheet1.xml'
+2026-04-20 09:44:52 [INFO ] IndiaMartSteps – TC01: Car wash data saved to Excel.
+2026-04-20 09:44:53 [INFO ] DriverManager – Browser closed and driver removed.
+2026-04-20 09:44:53 [INFO ] Hooks – FINISHED: Display top 3 car wash services from Chennai [PASSED]
+2026-04-20 09:44:53 [INFO ] Hooks – ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-04-20 09:44:53 [INFO ] Hooks – ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-04-20 09:44:53 [INFO ] Hooks – STARTING: Get product names from Food Agriculture and Farming section
+2026-04-20 09:44:53 [INFO ] Hooks – ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-04-20 09:44:53 [INFO ] DriverManager – Initializing browser: chrome
+2026-04-20 09:44:56 [INFO ] DriverManager – ChromeDriver started.
+2026-04-20 09:44:57 [INFO ] IndiaMartSteps – Opened IndiaMart: https://www.indiamart.com/
+2026-04-20 09:44:58 [INFO ] HomePage – Scrolled to Food, Agriculture & Farming section.
+2026-04-20 09:45:03 [DEBUG] HomePage – No popup found – continuing.
+2026-04-20 09:45:03 [INFO ] HomePage – Found 9 products in Food, Agriculture & Farming.
+2026-04-20 09:45:04 [INFO ] DriverManager – Browser closed and driver removed.
+2026-04-20 09:45:04 [INFO ] Hooks – FINISHED: Get product names from Food Agriculture and Farming section [PASSED]
+2026-04-20 09:45:04 [INFO ] Hooks – ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-04-20 09:45:04 [INFO ] Hooks – ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-04-20 09:45:04 [INFO ] Hooks – STARTING: Sign in attempt with invalid phone number
+2026-04-20 09:45:04 [INFO ] Hooks – ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-04-20 09:45:04 [INFO ] DriverManager – Initializing browser: chrome
+2026-04-20 09:45:07 [INFO ] DriverManager – ChromeDriver started.
+2026-04-20 09:45:09 [INFO ] IndiaMartSteps – Opened IndiaMart: https://www.indiamart.com/
+2026-04-20 09:45:09 [INFO ] HomePage – Clicking Sign In button.
+2026-04-20 09:45:10 [INFO ] LoginModal – Entered phone number: 5476543218
+2026-04-20 09:45:10 [INFO ] LoginModal – Phone number submitted.
+2026-04-20 09:45:10 [INFO ] LoginModal – Error message displayed: Mobile Number should start with 6,7,8 or 9
+2026-04-20 09:45:10 [INFO ] ScreenshotUtil – Screenshot saved → .\Screenshots\invalid_number_error.png
+2026-04-20 09:45:11 [INFO ] LoginModal – Sign-in modal closed.
+2026-04-20 09:45:12 [INFO ] DriverManager – Browser closed and driver removed.
+2026-04-20 09:45:12 [INFO ] Hooks – FINISHED: Sign in attempt with invalid phone number [PASSED]
+2026-04-20 09:45:12 [INFO ] Hooks – ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-04-20 09:45:12 [INFO ] Hooks – ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-04-20 09:45:12 [INFO ] Hooks – STARTING: Capture top product categories from Exporters section
+2026-04-20 09:45:12 [INFO ] Hooks – ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-04-20 09:45:12 [INFO ] DriverManager – Initializing browser: chrome
+2026-04-20 09:45:14 [INFO ] DriverManager – ChromeDriver started.
+2026-04-20 09:45:16 [INFO ] IndiaMartSteps – Opened IndiaMart: https://www.indiamart.com/
+2026-04-20 09:45:16 [INFO ] HomePage – Clicking Exporters tab.
+2026-04-20 09:45:19 [INFO ] ExportersPage – Exporters page loaded.
+2026-04-20 09:45:19 [INFO ] ExportersPage – Extracted 5 top product categories.
+2026-04-20 09:45:19 [INFO ] ExportersPage – Scrolled to top categories section.
+2026-04-20 09:45:19 [INFO ] ScreenshotUtil – Screenshot saved → .\Screenshots\top_product_categories_india.png
+2026-04-20 09:45:20 [INFO ] DriverManager – Browser closed and driver removed.
+2026-04-20 09:45:20 [INFO ] Hooks – FINISHED: Capture top product categories from Exporters section [PASSED]
+2026-04-20 09:45:20 [INFO ] Hooks – ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-04-20 09:47:45 [INFO ] Hooks – ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-04-20 09:47:45 [INFO ] Hooks – STARTING: Display top 3 car wash services from Chennai
+2026-04-20 09:47:45 [INFO ] Hooks – ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-04-20 09:47:45 [INFO ] DriverManager – Initializing browser: edge
+2026-04-20 09:47:49 [INFO ] DriverManager – Edge started.
+2026-04-20 09:47:56 [INFO ] IndiaMartSteps – Opened IndiaMart: https://www.indiamart.com/
+2026-04-20 09:47:57 [INFO ] HomePage – Current city: 'Chennai', Target city: 'Chennai'
+2026-04-20 09:47:57 [INFO ] HomePage – City already set to Chennai. Skipping city selection.
+2026-04-20 09:47:57 [INFO ] HomePage – Searching for: car wash services
+2026-04-20 09:47:58 [INFO ] SearchResultsPage – Search results loaded.
+2026-04-20 09:47:58 [DEBUG] SearchResultsPage – Top 3 names: [Doorstep Car Wash Service, Car Washing Services At Home, Car Washing Service]
+2026-04-20 09:48:00 [INFO ] ServiceDetailPage – Phone extracted: 07942548952
+2026-04-20 09:48:01 [INFO ] ServiceDetailPage – Phone extracted: 07942666907
+2026-04-20 09:48:02 [INFO ] ServiceDetailPage – Phone extracted: 08047812127
+2026-04-20 09:48:02 [INFO ] IndiaMartSteps – TC01: Collected 3 services.
+2026-04-20 09:48:03 [DEBUG] ZipPackage – Save core properties part
+2026-04-20 09:48:03 [DEBUG] ZipPackage – Save content types part
+2026-04-20 09:48:03 [DEBUG] ZipPackage – Save package relationships
+2026-04-20 09:48:03 [DEBUG] ZipPackage – Save part 'docProps/app.xml'
+2026-04-20 09:48:03 [DEBUG] ZipPackage – Save part 'docProps/core.xml'
+2026-04-20 09:48:03 [DEBUG] ZipPackage – Save part 'xl/sharedStrings.xml'
+2026-04-20 09:48:03 [DEBUG] ZipPackage – Save part 'xl/styles.xml'
+2026-04-20 09:48:03 [DEBUG] ZipPackage – Save part 'xl/workbook.xml'
+2026-04-20 09:48:03 [DEBUG] ZipPackage – Save part 'xl/worksheets/sheet1.xml'
+2026-04-20 09:48:03 [INFO ] ExcelWriter – Excel report saved → ./Reports/CarWashServices.xlsx
+2026-04-20 09:48:03 [DEBUG] ZipPackage – Save content types part
+2026-04-20 09:48:03 [DEBUG] ZipPackage – Save package relationships
+2026-04-20 09:48:03 [DEBUG] ZipPackage – Save part 'docProps/app.xml'
+2026-04-20 09:48:03 [DEBUG] ZipPackage – Save part 'docProps/core.xml'
+2026-04-20 09:48:03 [DEBUG] ZipPackage – Save part 'xl/sharedStrings.xml'
+2026-04-20 09:48:03 [DEBUG] ZipPackage – Save part 'xl/styles.xml'
+2026-04-20 09:48:03 [DEBUG] ZipPackage – Save part 'xl/workbook.xml'
+2026-04-20 09:48:03 [DEBUG] ZipPackage – Save part 'xl/worksheets/sheet1.xml'
+2026-04-20 09:48:03 [INFO ] IndiaMartSteps – TC01: Car wash data saved to Excel.
+2026-04-20 09:48:05 [INFO ] DriverManager – Browser closed and driver removed.
+2026-04-20 09:48:05 [INFO ] Hooks – FINISHED: Display top 3 car wash services from Chennai [PASSED]
+2026-04-20 09:48:05 [INFO ] Hooks – ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-04-20 09:48:05 [INFO ] Hooks – ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-04-20 09:48:05 [INFO ] Hooks – STARTING: Get product names from Food Agriculture and Farming section
+2026-04-20 09:48:05 [INFO ] Hooks – ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-04-20 09:48:05 [INFO ] DriverManager – Initializing browser: edge
+2026-04-20 09:48:08 [INFO ] DriverManager – Edge started.
+2026-04-20 09:48:10 [INFO ] IndiaMartSteps – Opened IndiaMart: https://www.indiamart.com/
+2026-04-20 09:48:10 [INFO ] HomePage – Scrolled to Food, Agriculture & Farming section.
+2026-04-20 09:48:15 [DEBUG] HomePage – No popup found – continuing.
+2026-04-20 09:48:15 [INFO ] HomePage – Found 9 products in Food, Agriculture & Farming.
+2026-04-20 09:48:17 [INFO ] DriverManager – Browser closed and driver removed.
+2026-04-20 09:48:17 [INFO ] Hooks – FINISHED: Get product names from Food Agriculture and Farming section [PASSED]
+2026-04-20 09:48:17 [INFO ] Hooks – ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-04-20 09:48:17 [INFO ] Hooks – ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-04-20 09:48:17 [INFO ] Hooks – STARTING: Sign in attempt with invalid phone number
+2026-04-20 09:48:17 [INFO ] Hooks – ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-04-20 09:48:17 [INFO ] DriverManager – Initializing browser: edge
+2026-04-20 09:48:20 [INFO ] DriverManager – Edge started.
+2026-04-20 09:48:21 [INFO ] IndiaMartSteps – Opened IndiaMart: https://www.indiamart.com/
+2026-04-20 09:48:21 [INFO ] HomePage – Clicking Sign In button.
+2026-04-20 09:48:23 [INFO ] LoginModal – Entered phone number: 5476543218
+2026-04-20 09:48:23 [INFO ] LoginModal – Phone number submitted.
+2026-04-20 09:48:23 [INFO ] LoginModal – Error message displayed: Mobile Number should start with 6,7,8 or 9
+2026-04-20 09:48:23 [INFO ] ScreenshotUtil – Screenshot saved → .\Screenshots\invalid_number_error.png
+2026-04-20 09:48:24 [INFO ] LoginModal – Sign-in modal closed.
+2026-04-20 09:48:25 [INFO ] DriverManager – Browser closed and driver removed.
+2026-04-20 09:48:25 [INFO ] Hooks – FINISHED: Sign in attempt with invalid phone number [PASSED]
+2026-04-20 09:48:25 [INFO ] Hooks – ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-04-20 09:48:25 [INFO ] Hooks – ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-04-20 09:48:25 [INFO ] Hooks – STARTING: Capture top product categories from Exporters section
+2026-04-20 09:48:25 [INFO ] Hooks – ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-04-20 09:48:25 [INFO ] DriverManager – Initializing browser: edge
+2026-04-20 09:48:28 [INFO ] DriverManager – Edge started.
+2026-04-20 09:48:30 [INFO ] IndiaMartSteps – Opened IndiaMart: https://www.indiamart.com/
+2026-04-20 09:48:30 [INFO ] HomePage – Clicking Exporters tab.
+2026-04-20 09:48:32 [INFO ] ExportersPage – Exporters page loaded.
+2026-04-20 09:48:32 [INFO ] ExportersPage – Extracted 5 top product categories.
+2026-04-20 09:48:32 [INFO ] ExportersPage – Scrolled to top categories section.
+2026-04-20 09:48:32 [INFO ] ScreenshotUtil – Screenshot saved → .\Screenshots\top_product_categories_india.png
+2026-04-20 09:48:34 [INFO ] DriverManager – Browser closed and driver removed.
+2026-04-20 09:48:34 [INFO ] Hooks – FINISHED: Capture top product categories from Exporters section [PASSED]
+2026-04-20 09:48:34 [INFO ] Hooks – ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
