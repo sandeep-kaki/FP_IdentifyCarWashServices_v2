@@ -33,6 +33,8 @@ public class SearchResultsPage {
 
     private static final Logger log = LogManager.getLogger(SearchResultsPage.class);
 
+    private static final String RATING_PICKER = "(//*[@id='sellerrating_1']/span[@class='bo color'])[position() <= 3]";
+
     private final WebDriver     driver;
     private final WebDriverWait wait;
 
@@ -103,26 +105,13 @@ public class SearchResultsPage {
      * Falls back to "N/A" if not found – test does NOT fail on missing ratings.
      */
     public List<String> getTop3Ratings() {
-        List<WebElement> cards = driver.findElements(By.xpath(CARD_XPATH));
+        List<WebElement> ratingsWebElements = driver.findElements(By.xpath(RATING_PICKER));
         List<String> ratings = new ArrayList<>();
 
-        for (int i = 0; i < Math.min(3, cards.size()); i++) {
+        for (int i = 0; i < Math.min(3, ratingsWebElements.size()); i++) {
             String rating = "N/A";
-            try {
-                // Walk UP to the card's container, then look DOWN for rating
-                WebElement container = cards.get(i).findElement(
-                        By.xpath("./ancestor::div[contains(@class,'bx') " +
-                                 "or contains(@class,'card') " +
-                                 "or contains(@class,'listing')][1]"));
+            rating = ratingsWebElements.get(i).getText();
 
-                WebElement ratingEl = container.findElement(By.xpath(RATING_XPATH));
-                String raw = ratingEl.getText().trim();
-                if (!raw.isEmpty()) rating = raw;
-
-            } catch (NoSuchElementException e) {
-                // Rating not shown for this listing – leave as N/A
-                log.debug("Rating not found for card {}. Defaulting to N/A.", i + 1);
-            }
             ratings.add(rating);
         }
         return ratings;
