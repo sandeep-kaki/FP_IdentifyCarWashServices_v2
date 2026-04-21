@@ -13,7 +13,7 @@
 <suite name="IndiaMart Automation Suite" verbose="1">
     <test name="IndiaMart Test Scenarios">
         <classes>
-            <class name="com.indiamart.runner.TestRunner"/>
+            <class name="runner.TestRunner"/>
         </classes>
     </test>
 </suite>
