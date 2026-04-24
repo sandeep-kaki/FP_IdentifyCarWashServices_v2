@@ -117,7 +117,7 @@ public class IndiaMartSteps {
 
     @And("the details should be saved to Excel")
     public void saveToExcel() {
-        ExcelWriter.writeCarWashData(serviceNames, servicePhones, serviceRatings);
+        ExcelWriter.writeData(serviceNames, servicePhones, serviceRatings);
         log.info("TC01: Car wash data saved to Excel.");
     }
 

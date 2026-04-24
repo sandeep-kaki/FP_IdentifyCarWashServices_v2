@@ -4,7 +4,7 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
-import utils.AllureReportCleaner;
+import utils.AllureReportOpener;
 
 @CucumberOptions(
         features  = "src/test/resources/features",
@@ -24,13 +24,18 @@ import utils.AllureReportCleaner;
                 // Rerun plugin – writes failed scenario locations to a file
                 "rerun:target/failed_scenarios.txt"
         },
-        monochrome = true   // removes ANSI color codes from console output
+        monochrome = true
 )
 public class TestRunner extends AbstractTestNGCucumberTests {
         @BeforeSuite
         public void beforeSuite() {
                 System.out.println("--- Starting Test Suite: Allure Results Cleaned ---");
-                AllureReportCleaner.cleanAllureResults();
+                AllureReportOpener.cleanAllureResults();
         }
 
+        @AfterSuite
+        public void afterSuite() {
+                System.out.println("--- All Tests Finished. Launching Allure Report ---");
+                AllureReportOpener.openAllureReport();
+        }
 }

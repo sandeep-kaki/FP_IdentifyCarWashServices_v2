@@ -41,4 +41,5 @@ public class Hooks {
         log.info("FINISHED: {} [{}]", scenario.getName(), scenario.getStatus());
         log.info("----------------------------------------------");
     }
+
 }

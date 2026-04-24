@@ -22,9 +22,9 @@ public class DriverManager {
         String browser = ConfigReader.getInstance().get("browser").toLowerCase();
         log.info("Initializing browser: {}", browser);
 
-        WebDriver driver;
+        WebDriver driver = null;
 
-        switch (browser.toLowerCase()) {
+        switch (browser) {
 
             case "edge":
                 EdgeOptions edgeOptions = new EdgeOptions();
@@ -34,7 +34,7 @@ public class DriverManager {
                 log.info("Edge started.");
                 break;
 
-            default:
+            case "chrome":
                 ChromeOptions chromeOptions = new ChromeOptions();
                 chromeOptions.addArguments("--disable-notifications");
                 chromeOptions.addArguments("--start-maximized");
@@ -42,7 +42,6 @@ public class DriverManager {
                 log.info("ChromeDriver started.");
                 break;
         }
-
         driverThread.set(driver);
     }
 
